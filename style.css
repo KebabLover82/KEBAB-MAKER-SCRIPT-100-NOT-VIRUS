@@ -1,0 +1,126 @@
+body {
+    font-family: "Montserrat", sans-serif;
+    margin: 0;
+    padding: 0;
+    background: white;
+}
+
+#loginPage,
+#signupPage,
+#chatPage {
+    max-width: 400px;
+    margin: 120px auto;
+    padding: 25px;
+    border-radius: 35px;
+    background-color: transparent;
+    box-shadow: 0 0 0px rgba(0, 0, 0, 0.1);
+}
+
+input[type="text"],
+input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    background: white;
+    border: 3px solid darkblue;
+    border-radius: 20px;
+    margin: 8px 0;
+    box-shadow: 0 0 2px, 0 0 4px darkblue;
+    box-sizing: border-box;
+}
+
+button {
+    background-color: darkblue;
+    color: white;
+    padding: 15px 70px;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: blue;
+}
+
+#messageInput {
+    width: 80%;
+    padding: 10px;
+    margin-right: 5px;
+    box-sizing: border-box;
+}
+
+#messageOutput {
+    max-height: 200px;
+    overflow-y: auto;
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin-top: 10px;
+}
+
+#messageOutput div {
+    margin-bottom: 5px;
+}
+
+#logoutButton {
+    background-color: #f44336;
+}
+
+#logoutButton:hover {
+    background-color: #d32f2f;
+}
+
+h1 {
+  color: linear-gradient black, white;
+}
+
+p {
+  color: black;
+}
+
+a {
+  color: blue;
+}
+
+label {
+    color: black;
+}
+
+#messageOutput {
+    max-height: 250px;
+    overflow-y: auto;
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin-top: 10px;
+    background-color: #fff;
+}
+
+#messageOutput div {
+    margin-bottom: 5px;
+    color: white;
+}
+
+footer {
+  position: relative;
+  font-family: "Montserrat", sans-serif;
+  text-align: center;
+  text-align-last: bottom;
+  color: gray;
+  bottom: 20px;
+}
+
+#createPostButton {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 20px;
+    height: 20px;
+    background-color: darkblue;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+#createPostButton:hover {
+    background-color: blue;
+}

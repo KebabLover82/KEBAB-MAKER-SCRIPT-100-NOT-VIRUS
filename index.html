@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Viron</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+<body>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@800&display=swap" rel="stylesheet">
+
+<!-- Login page content -->
+<div id="loginPage">
+    <h1>Login</h1>
+    <label for="usernameInput">Username:</label>
+    <input type="text" id="usernameInput" placeholder="Enter your username">
+    <br>
+    <label for="passwordInput">Password:</label>
+    <input type="password" id="passwordInput" placeholder="Enter your password">
+    <br>
+    <button onclick="login()">Login</button>
+    <p>Don't have an account? <a href="#" onclick="switchToSignupPage()">Sign Up</a></p>
+</div>
+
+<!-- Signup page content -->
+<div id="signupPage" style="display: none;">
+    <h1>Sign Up</h1>
+    <label for="newUsernameInput">Username:</label>
+    <input type="text" id="newUsernameInput" placeholder="Enter your username">
+    <br>
+    <label for="newPasswordInput">Password:</label>
+    <input type="password" id="newPasswordInput" placeholder="Enter your password">
+    <br>
+    <button onclick="signup()">Sign Up</button>
+    <p>Already have an account? <a href="#" onclick="switchToLoginPage()">Login</a></p>
+</div>
+
+<!-- Chat page content -->
+<div id="chatPage" style="display: none;">
+    <h1>Viron</h1>
+    <input type="text" id="messageInput" placeholder="Enter your message">
+    <button onclick="sendMessage()">Send</button>
+    <button onclick="logout()">Logout</button>
+    <div id="messageOutput"></div>
+</div>
+
+<!-- Version Footer -->
+<footer>Version: Alpha 0.0.1</footer>
+
+</body>
+</html>
